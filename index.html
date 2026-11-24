@@ -75,6 +75,13 @@ img{ max-width:100%; }
   .franja{ background:var(--crema-2); border-top:1px solid var(--borde); border-bottom:1px solid var(--borde); }
   .datos{ display:flex; flex-wrap:wrap; gap:10px 26px; padding:16px 0; font-size:.98rem; }
   .datos b{ color:var(--vino); }
+
+  .tabla-crono{ overflow-x:auto; margin-top:16px; border:1px solid var(--borde); border-radius:var(--r-md); }
+  .tabla-crono table{ border-collapse:collapse; width:100%; min-width:880px; font-size:.84rem; background:var(--papel); }
+  .tabla-crono th{ background:var(--dorado); color:var(--vino-tinta); text-align:left; padding:9px 10px; font-size:.78rem; letter-spacing:.02em; }
+  .tabla-crono td{ padding:8px 10px; border-top:1px solid var(--borde-suave); vertical-align:top; }
+  .tabla-crono tr:nth-child(even) td{ background:var(--crema); }
+  .tabla-crono td.n{ font-weight:700; color:var(--vino); text-align:center; }
   @media (max-width:560px){
     .acto{ flex-direction:column; gap:2px; }
     .acto .h{ flex:none; }
@@ -178,9 +185,35 @@ img{ max-width:100%; }
     </ol>
   </section>
 
+
+  <section class="seccion" id="cronograma">
+    <h2>Cronograma</h2>
+    <div class="tabla-crono">
+      <table>
+        <thead><tr><th>N°</th><th>Horario</th><th>Actividad</th><th>Asignatura / Eje</th><th>Grupo / Carpa</th><th>Nombre de los participantes</th><th>Nombre del trabajo</th><th>Docente responsable</th><th>Observaciones</th></tr></thead>
+        <tbody>
+        <tr><td class="n">1</td><td>10:00 – 10:05</td><td>Apertura</td><td>—</td><td>Plenaria</td><td>Mtra. Laura Lázaro Felipe</td><td>Presentación del evento</td><td>Jefa de Carrera</td><td>—</td></tr>
+        <tr><td class="n">2</td><td>10:05 – 10:10</td><td>Apertura</td><td>—</td><td>Plenaria</td><td>Mtra. Alejandra y equipo de Psicología de las Sedes Académicas</td><td>Presentación del presídium</td><td>—</td><td>—</td></tr>
+        <tr><td class="n">3</td><td>10:10 – 10:20</td><td>Apertura</td><td>—</td><td>Plenaria</td><td>Mtra. Alejandra</td><td>Presentación del área de Psicología</td><td>—</td><td>—</td></tr>
+        <tr><td class="n">4</td><td>10:20 – 10:32</td><td>Apertura</td><td>—</td><td>Plenaria</td><td>Mtro. Wilbert Omar Torres Rojas · Dr. Rafael Augusto Osorio Rivera · Mtro. Oscar Adrian Jelove Jimenez · Mtro. Fernando Arnulfo Santander Guerrero</td><td>Inauguración de actividades y bienvenida</td><td>—</td><td>—</td></tr>
+        <tr><td class="n">5</td><td>10:32 – 11:02</td><td>Apertura</td><td>—</td><td>Plenaria</td><td>Sedes Académicas</td><td>Presentación de cada institución</td><td>—</td><td>—</td></tr>
+        <tr><td class="n">6</td><td>11:02 – 11:17</td><td>Ponencia</td><td>Prácticas profesionales</td><td>Plenaria</td><td>Leticia Guadalupe Reyes Normandía y María Patricia García Paiz</td><td>Convivencia y diversidad en la Escuela de Artesanías del INBAL: experiencias de prácticas profesionales desde la Psicología Educativa</td><td>—</td><td>—</td></tr>
+        <tr><td class="n">7</td><td>11:17 – 11:32</td><td>Ponencia</td><td>Prácticas profesionales</td><td>Plenaria</td><td>Alejandra Ramos Álvarez e Irma Luna García</td><td>Proyecto de vida como estrategia psicoeducativa para fortalecer recursos personales en adolescentes del CONALEP Ixtapaluca</td><td>—</td><td>—</td></tr>
+        <tr><td class="n">8</td><td>11:32 – 11:47</td><td>Ponencia</td><td>Prácticas profesionales</td><td>Plenaria</td><td>Mariana Cano Díaz</td><td>Demencia y envejecimiento: impacto psicosocial de la enfermedad en la dinámica familiar</td><td>—</td><td>—</td></tr>
+        <tr><td class="n">9</td><td>11:47 – 12:02</td><td>Ponencia</td><td>Prácticas profesionales</td><td>Plenaria</td><td>Aranza Lisset Rangel González</td><td>Barreras de Aprendizaje y Participación (BAP) y estrategias docentes inclusivas</td><td>—</td><td>—</td></tr>
+        <tr><td class="n">10</td><td>12:05 – 12:50</td><td>Trabajo en carpa</td><td>Prácticas profesionales</td><td>Carpa 1</td><td>Leticia Guadalupe Reyes Normandía · María Patricia García Paiz · Mariana Cano Díaz</td><td>Convivencia y diversidad (INBAL) · Demencia y envejecimiento</td><td>—</td><td>Tres ponentes por carpa</td></tr>
+        <tr><td class="n">11</td><td>12:05 – 12:50</td><td>Trabajo en carpa</td><td>Prácticas profesionales</td><td>Carpa 2</td><td>Alejandra Ramos Álvarez · Irma Luna García · Aranza Lisset Rangel González</td><td>Proyecto de vida (CONALEP Ixtapaluca) · Barreras de Aprendizaje y Participación (BAP)</td><td>—</td><td>Tres ponentes por carpa</td></tr>
+        <tr><td class="n">12</td><td>12:05 – 13:00</td><td>Actividad simultánea</td><td>Educación Continua</td><td>Espacio simultáneo</td><td>Área de Educación Continua</td><td>Asesoría metodológica de Educación Continua</td><td>—</td><td>Simultánea al trabajo en carpas</td></tr>
+        <tr><td class="n">13</td><td>12:00 – 12:40</td><td>Actividad simultánea</td><td>—</td><td>Plenaria</td><td>—</td><td>Música</td><td>—</td><td>Interludios musicales</td></tr>
+        <tr><td class="n">14</td><td>12:40 – 12:50</td><td>Clausura</td><td>—</td><td>Plenaria</td><td>—</td><td>Cierre del Encuentro</td><td>—</td><td>Conclusiones y despedida</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
   <section class="seccion" id="materiales">
     <h2>Materiales</h2>
-    <p class="intro">El programa completo, el tríptico, la orden del día y el banner del Encuentro
+    <p class="intro">El programa completo, el cronograma, el tríptico, la orden del día y el banner del Encuentro
       están disponibles en la carpeta oficial de materiales.</p>
     <div class="materiales">
       <a class="boton" href="https://drive.google.com/drive/folders/1wbtmOCyVs69zLMz7HN_Lu-nyozOnvr5o" target="_blank" rel="noopener">Carpeta de materiales en Drive</a>
